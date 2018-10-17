@@ -19,7 +19,7 @@ Yii2-liqpay
 Выполнить команду
 
 ```
-php composer require borysenko/yii2-liqpay "*"
+composer require borysenko/yii2-liqpay "*"
 ```
 
 Или добавить в composer.json
