@@ -41,7 +41,7 @@ php composer update
             'language' => 'ru',
             'result_url' => '/page/thanks',
             'paymentName' => 'Оплата заказа',
-            'orderModel' => 'pistol88\order\models\Order', //Модель заказа. Эта модель должна имплементировать интерфейс pistol88\liqpay\interfaces\Order. В момент списания денег будет вызываться $model->setPaymentStatus('yes').
+            'orderModel' => 'frontend\models\Order', //Модель заказа. Эта модель должна имплементировать интерфейс borysenko\liqpay\interfaces\Order. В момент списания денег будет вызываться $model->setPaymentStatus('yes').
         ],
         //...
     ],
