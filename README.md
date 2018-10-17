@@ -57,6 +57,41 @@ php composer update
     ],
 ```
 
+Модель Order
+---------------------------------
+```php
+<?php
+namespace frontend\models;
+
+use Yii;
+use yii\db\ActiveRecord;
+
+Class Order extends ActiveRecord implements \borysenko\liqpay\interfaces\Order
+{
+    public static function tableName()
+    {
+        return 'orders';
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getCost()
+    {
+        return $this->cost;
+    }
+
+    function setPaymentStatus($status)
+    {
+        $this->payment = $status;
+
+        return $this;
+    }
+}
+```
+
 Виджеты
 ---------------------------------
 За вывод формы оплаты отвечает виджет borysenko\liqpay\widgets\PaymentForm.
