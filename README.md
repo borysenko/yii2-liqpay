@@ -53,8 +53,6 @@ php composer update
 ---------------------------------
 За вывод формы оплаты отвечает виджет borysenko\liqpay\widgets\PaymentForm.
 
-Скорее всего, самое уместное место для виджета - страница "спасибо за заказ.
-
 ```php
 <?=\borysenko\liqpay\widgets\PaymentForm::widget([
     'autoSend' => true,
