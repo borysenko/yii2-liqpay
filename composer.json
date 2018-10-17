@@ -1,0 +1,25 @@
+{
+    "name": "borysenko/yii2-liqpay",
+    "description": "Payment widget for liqpay.com",
+    "keywords": ["yii2", "yii 2", "payment", "liqpay", "borysenko"],
+    "homepage": "https://github.com/pistol88/yii2-liqpay",
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "support": {
+        "source": "https://github.com/borysenko/yii2-liqpay"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "voskobovich/yii2-liqpay": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "autoload": {
+        "psr-4": {
+            "borysenko\\liqpay\\": ""
+        }
+    }
+}
