@@ -99,7 +99,7 @@ Class Order extends ActiveRecord implements \borysenko\liqpay\interfaces\Order
 ```php
 <?=\borysenko\liqpay\widgets\PaymentForm::widget([
     'autoSend' => true,
-    'orderModel' => $model,
+    'orderModel' => $model, //Order::findOne($id);
     'description' => 'Оплата заказа'
 ]);?>
 ```
