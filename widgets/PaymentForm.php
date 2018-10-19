@@ -22,7 +22,7 @@ class PaymentForm extends Widget
 
     public function run()
     {
-        $module = yii::$app->getModule('liqpay');
+        $module = Yii::$app->getModule('liqpay');
 
         $data = [
             'amount' => $this->orderModel->getCost(),

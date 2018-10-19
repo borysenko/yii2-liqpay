@@ -1,7 +1,8 @@
 <?php
+
 namespace borysenko\liqpay;
 
-use yii;
+use Yii;
 use yii\helpers\Url;
 
 class Module extends \yii\base\Module
@@ -21,13 +22,11 @@ class Module extends \yii\base\Module
 
     public function init()
     {
-        if(empty($this->server_url)) {
+        if (empty($this->server_url)) {
             $this->server_url = Url::toRoute(['/liqpay/liqpay/callback'], true);
         }
 
-        $app = yii::$app;
-
-        $app->set('liqpay', [
+        Yii::$app->set('liqpay', [
             'class' => '\voskobovich\liqpay\LiqPay',
             'public_key' => $this->public_key,
             'private_key' => $this->private_key,

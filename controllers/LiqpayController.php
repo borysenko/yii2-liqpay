@@ -2,7 +2,7 @@
 
 namespace borysenko\liqpay\controllers;
 
-use yii;
+use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 
